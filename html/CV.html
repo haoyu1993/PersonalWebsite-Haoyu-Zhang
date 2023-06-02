@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CV</title>
+  <style>
+    #pdf-container {
+      width: 100%;
+      height: 600px;
+    }
+  </style>
+  <script>
+    function showPDF () {
+      var pdfContainer = document.getElementById('pdf-container')
+      pdfContainer.innerHTML = '<embed src="../pdf/Haoyu Zhang-CV.pdf" width="100%" height="100%" type="application/pdf">'
+    }
+
+    window.addEventListener('load', showPDF);
+  </script>
+</head>
+
+<body>
+  <div id="pdf-container"></div>
+</body>
+
+</html>
